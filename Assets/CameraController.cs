@@ -1,3 +1,5 @@
+using Unity.VectorGraphics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,16 +10,22 @@ public class CameraController : MonoBehaviour
 	public float lookSpeed;
 	public float zoomedValue = 20;
 	public float unZoomedValue;
-	Camera camera; 
+
+	bool isZoomed = false;
+
+	Camera cameraComponent; 
 
 	private Vector2 currentRotation = Vector2.zero;
 	void Start()
 	{
 		lookAction = InputSystem.actions.FindAction("Look");
 		zoomAction = InputSystem.actions.FindAction("Zoom");
-		camera = GetComponent<Camera>();
-		unZoomedValue = camera.fieldOfView;
-    }
+		cameraComponent = GetComponent<Camera>();
+		unZoomedValue = cameraComponent.fieldOfView;
+
+		StarBehavior star = GameObject.FindAnyObjectByType<StarBehavior>();
+		
+	}
 
     void Update()
     {
@@ -27,11 +35,19 @@ public class CameraController : MonoBehaviour
 		float zoomValue = zoomAction.ReadValue<float>();
 		if (zoomValue > 0)
 		{
-			camera.fieldOfView = zoomedValue;
-        }
+			cameraComponent.fieldOfView = zoomedValue;
+			isZoomed = true;
+
+		}
 		else if (zoomValue < 0)
 		{
-			camera.fieldOfView = unZoomedValue;
+			cameraComponent.fieldOfView = unZoomedValue;
+			isZoomed = false;
+		}
+
+		if (isZoomed)
+		{
+			if()
 		}
 
         currentRotation.x += lookValue.x;
