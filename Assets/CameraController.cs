@@ -5,18 +5,18 @@ public class CameraController : MonoBehaviour
 {
 	InputAction lookAction;
 	InputAction zoomAction;
-	public float lookSpeed;
+	public float lookSpeed = 10;
 	public float zoomedValue = 20;
 	public float unZoomedValue;
-	Camera camera; 
+	Camera cameraComponent; 
 
 	private Vector2 currentRotation = Vector2.zero;
 	void Start()
 	{
 		lookAction = InputSystem.actions.FindAction("Look");
 		zoomAction = InputSystem.actions.FindAction("Zoom");
-		camera = GetComponent<Camera>();
-		unZoomedValue = camera.fieldOfView;
+		cameraComponent = GetComponent<Camera>();
+		unZoomedValue = cameraComponent.fieldOfView;
     }
 
     void Update()
@@ -27,11 +27,14 @@ public class CameraController : MonoBehaviour
 		float zoomValue = zoomAction.ReadValue<float>();
 		if (zoomValue > 0)
 		{
-			camera.fieldOfView = zoomedValue;
+			cameraComponent.fieldOfView = zoomedValue;
+			lookSpeed = 0.5f;
+
         }
 		else if (zoomValue < 0)
 		{
-			camera.fieldOfView = unZoomedValue;
+			cameraComponent.fieldOfView = unZoomedValue;
+			lookSpeed = 10f;
 		}
 
         currentRotation.x += lookValue.x;
