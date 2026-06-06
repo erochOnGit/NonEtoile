@@ -17,6 +17,9 @@
 
 Packages/manifest.json
 Packages/packages-lock.json
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/ProjectVersion.txt
+
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
