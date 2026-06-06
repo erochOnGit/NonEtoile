@@ -7,11 +7,13 @@ public class CameraController : MonoBehaviour
 {
 	InputAction lookAction;
 	InputAction zoomAction;
-	public float lookSpeed;
+	public float lookSpeed = 10;
 	public float zoomedValue = 20;
 	public float unZoomedValue;
 
+
 	bool isZoomed = false;
+
 
 	Camera cameraComponent; 
 
@@ -23,9 +25,13 @@ public class CameraController : MonoBehaviour
 		cameraComponent = GetComponent<Camera>();
 		unZoomedValue = cameraComponent.fieldOfView;
 
+
 		StarBehavior star = GameObject.FindAnyObjectByType<StarBehavior>();
 		
 	}
+
+    
+
 
     void Update()
     {
@@ -36,19 +42,20 @@ public class CameraController : MonoBehaviour
 		if (zoomValue > 0)
 		{
 			cameraComponent.fieldOfView = zoomedValue;
+
 			isZoomed = true;
+			lookSpeed = 0.5f;
 
 		}
 		else if (zoomValue < 0)
 		{
 			cameraComponent.fieldOfView = unZoomedValue;
+			lookSpeed = 10f;
 			isZoomed = false;
 		}
 
-		if (isZoomed)
-		{
-			if()
-		}
+	
+
 
         currentRotation.x += lookValue.x;
 		currentRotation.y -= lookValue.y;
