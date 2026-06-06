@@ -15,8 +15,8 @@ public class CameraController : MonoBehaviour
 	bool isZoomed = false;
 
 
-	Camera cameraComponent; 
-
+	Camera cameraComponent;
+	StarBehavior star;
 	private Vector2 currentRotation = Vector2.zero;
 	void Start()
 	{
@@ -26,7 +26,7 @@ public class CameraController : MonoBehaviour
 		unZoomedValue = cameraComponent.fieldOfView;
 
 
-		StarBehavior star = GameObject.FindAnyObjectByType<StarBehavior>();
+		star = GameObject.FindAnyObjectByType<StarBehavior>();
 		
 	}
 
@@ -54,16 +54,26 @@ public class CameraController : MonoBehaviour
 			isZoomed = false;
 		}
 
-	
 
+		if (isZoomed)
+		{
+			float dot = Vector3.Dot(cameraComponent.transform.forward, (star.transform.position - cameraComponent.transform.position).normalized);
+			if (dot > 0.999f)
+			{
+				Victory();
+			}
+		}
 
         currentRotation.x += lookValue.x;
 		currentRotation.y -= lookValue.y;
 		currentRotation.x = Mathf.Repeat(currentRotation.x, 360);
 		currentRotation.y = Mathf.Clamp(currentRotation.y, -80 , 80 );
 		Camera.main.transform.rotation = Quaternion.Euler(currentRotation.y, currentRotation.x, 0);
+	}
 
-
-
+	void Victory()
+	{
+		Debug.Log("Victory!");
+		// Implement victory logic here (e.g., display a message, load a new scene, etc.)
 	}
 }
