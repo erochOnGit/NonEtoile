@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
   m_Name: HDRISky
   m_EditorClassIdentifier: Unity.RenderPipelines.HighDefinition.Runtime::UnityEngine.Rendering.HighDefinition.HDRISky
-  active: 0
+  active: 1
   rotation:
     m_OverrideState: 0
     m_Value: 0
@@ -322,10 +322,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   upperHemisphereLuxValue:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.22620209
   upperHemisphereLuxColor:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0.5, y: 0.16072446, z: 0.11561369}
   desiredLuxValue:
     m_OverrideState: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   hdriSky:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {fileID: 8900000, guid: a3de28b69b48944438c87668bd722ae7, type: 3}
   distortionMode:
     m_OverrideState: 0
