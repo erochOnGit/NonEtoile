@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfca7a95aff45d24fb69b6cc6e094632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  distanceFromPlayer: 200
-  minimalDistance: 100
+  distanceFromPlayer: 250
+  minimalDistance: 150
   animationSpeed: 0.25
   textures:
   - {fileID: 2800000, guid: 9359bf26227db9b4796e8acef1d77843, type: 3}

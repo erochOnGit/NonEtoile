@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -135,6 +135,28 @@ MonoBehaviour:
   - {fileID: 3637798442930310061, guid: 4bd4f538f7aee6d4398344263c24c72f, type: 3}
   - {fileID: 3637798442930310061, guid: d7ff53e2c0e85604a9799feffa961bdf, type: 3}
   - {fileID: 3637798442930310061, guid: 60476bc494425bc4e961ba42d0a2fe25, type: 3}
+  - {fileID: 3637798442930310061, guid: 3d79a6a950e11574a9953ef9785638e9, type: 3}
+  - {fileID: 3637798442930310061, guid: b21c9f146269ff246aa476c27ce2eacb, type: 3}
+  - {fileID: 3637798442930310061, guid: 6fb9cb2805784704492c9f8d6fbd6d8a, type: 3}
+  - {fileID: 3637798442930310061, guid: 516c26d7ce4470f409f58bc10316b0f9, type: 3}
+  - {fileID: 3637798442930310061, guid: d43329baeaf467748a1864a212e20b59, type: 3}
+  - {fileID: 3637798442930310061, guid: 3df0dee62720a634dbd7cfbda59bc40d, type: 3}
+  - {fileID: 3637798442930310061, guid: d84551ae01d0e0d458d18fe4108edf20, type: 3}
+  - {fileID: 3637798442930310061, guid: 7244a715719e2fa4ea71f5d6b650d586, type: 3}
+  - {fileID: 3637798442930310061, guid: 6a497b11f581a94448193e1bca9d7250, type: 3}
+  - {fileID: 3637798442930310061, guid: 7c59efcedafb41d49abfd9919a242d45, type: 3}
+  - {fileID: 3637798442930310061, guid: 13cfa86c92bf59b428cd6da0f87dfa4e, type: 3}
+  - {fileID: 3637798442930310061, guid: 72a8e305e1073cd46b45a578f842730f, type: 3}
+  - {fileID: 3637798442930310061, guid: de64b1d08a5fd054cacca0a9a5ba4e26, type: 3}
+  - {fileID: 3637798442930310061, guid: aca7ff6530dc8d446a202e24aab57e13, type: 3}
+  - {fileID: 3637798442930310061, guid: 200f73e9e5b6f594fb6ce244c8c25adc, type: 3}
+  - {fileID: 3637798442930310061, guid: ac7336737cfaaaa498305f15912464d9, type: 3}
+  - {fileID: 3637798442930310061, guid: 6aafd1209b3cf184c8ea5b13e9eff178, type: 3}
+  - {fileID: 3637798442930310061, guid: 16717585bd955114caa1d6f5e39f3653, type: 3}
+  - {fileID: 3637798442930310061, guid: e9323c2c817c53743868810ad7f1354a, type: 3}
+  - {fileID: 3637798442930310061, guid: 86bcfcf40de1c024ca3954df1bdbc4c7, type: 3}
+  - {fileID: 3637798442930310061, guid: 8ac74bd9533c3e347b57e8c86d81c081, type: 3}
+  - {fileID: 3637798442930310061, guid: aafb56b80788c974eb28e2d9dce1f361, type: 3}
 --- !u!114 &6798246601862903308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +169,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfca7a95aff45d24fb69b6cc6e094632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Constellation
-  distanceFromPlayer: 200
+  distanceFromPlayer: 150
   minimalDistance: 100
-  animationSpeed: 1
-  textures: []
+  animationSpeed: 0.17
+  textures:
+  - {fileID: 2800000, guid: df181b04ec854d44a8e0ddc8eb6af150, type: 3}
+  - {fileID: 2800000, guid: b8dc864cd109a1f42ad836206647f119, type: 3}
+  - {fileID: 2800000, guid: e14ff7d6b50ee1a41a939ce7a57f0983, type: 3}
+  - {fileID: 2800000, guid: 5393ecc4c77b92a4da469eb8ffc0d88a, type: 3}
+  - {fileID: 2800000, guid: 6140203e48777f24b9fd7473e6460859, type: 3}
+  - {fileID: 2800000, guid: b970762f58c33824093b1647aba6c6fe, type: 3}
+  - {fileID: 2800000, guid: 1c663b2543c38784ab261b32add2f677, type: 3}
+  - {fileID: 2800000, guid: 9de175f19e1da534ba6df3f4fd09d03e, type: 3}
+  - {fileID: 2800000, guid: e23c694b36c37ea4f9a8c385c581e609, type: 3}
+  - {fileID: 2800000, guid: b3e1087493e88cf4e8baa0eced9d5cba, type: 3}
+  - {fileID: 2800000, guid: ab6cf9fe4f1afb44586ab82bb2bb2631, type: 3}
+  - {fileID: 2800000, guid: b45a4bc9af05d024ea4db271c8d22f7c, type: 3}
+  - {fileID: 2800000, guid: 71d4f07c452186c4aa8da7c774724cac, type: 3}
+  - {fileID: 2800000, guid: d17abc5538fabdb4d9df73442559fd34, type: 3}

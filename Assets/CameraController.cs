@@ -9,7 +9,9 @@ public class CameraController : MonoBehaviour
 {
 	InputAction lookAction;
 	InputAction zoomAction;
-	public float lookSpeed = 10;
+    InputAction quitAction;
+    InputAction restartAction;
+    public float lookSpeed = 10;
 	public float zoomedValue = 20;
 	public float unZoomedValue;
 
@@ -31,7 +33,9 @@ public class CameraController : MonoBehaviour
         Cursor.visible = false;
 		lookAction = InputSystem.actions.FindAction("Look");
 		zoomAction = InputSystem.actions.FindAction("Zoom");
-		cameraComponent = GetComponent<Camera>();
+		quitAction = InputSystem.actions.FindAction("Quit");
+		restartAction = InputSystem.actions.FindAction("Restart");
+        cameraComponent = GetComponent<Camera>();
 		unZoomedValue = cameraComponent.fieldOfView;
 		star = GameObject.FindAnyObjectByType<StarManager>();
 	}
@@ -41,9 +45,16 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+		if(restartAction.IsPressed())
+		{
+			Restart();
+		}
+		if(quitAction.IsPressed())
+		{
+			Quit();
+		}
 		if (!haveWon)
 		{
-		
 			Vector2 lookValue = lookAction.ReadValue<Vector2>();
 			lookValue *= Time.deltaTime * lookSpeed; // Adjust sensitivity and frame rate independence
 
@@ -67,7 +78,7 @@ public class CameraController : MonoBehaviour
 			if (isZoomed)
 			{
 				float dot = Vector3.Dot(cameraComponent.transform.forward, (star.transform.position - cameraComponent.transform.position).normalized);
-				if (dot > 0.999f)
+				if (dot > 0.9999f)
 				{
 					Victory();
 				}
@@ -90,11 +101,16 @@ public class CameraController : MonoBehaviour
 
 	public void Restart()
 	{
-
 		Cursor.visible = false;
 		SceneManager.LoadScene(0);
 		SceneManager.LoadScene(1,LoadSceneMode.Additive);
 	}
+
+    public void Quit()
+    {
+		Debug.Log("Quit");
+        Application.Quit();
+    }
 
 }
 
