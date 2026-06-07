@@ -76,7 +76,7 @@ public class CameraController : MonoBehaviour
 			currentRotation.x += lookValue.x;
 			currentRotation.y -= lookValue.y;
 			currentRotation.x = Mathf.Repeat(currentRotation.x, 360);
-			currentRotation.y = Mathf.Clamp(currentRotation.y, -80 , 80);
+			currentRotation.y = Mathf.Clamp(currentRotation.y, -80 , 80 );
 			Camera.main.transform.rotation = Quaternion.Euler(currentRotation.y, currentRotation.x, 0);
 		}
 	}

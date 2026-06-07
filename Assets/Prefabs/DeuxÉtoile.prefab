@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2827565753834890939}
   - component: {fileID: 2775636804901684664}
   - component: {fileID: 2169672924190069185}
+  - component: {fileID: 7595318532213461108}
+  - component: {fileID: 6798246601862903308}
   m_Layer: 0
   m_Name: "Deux\xC9toile"
   m_TagString: Untagged
@@ -113,3 +115,39 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7595318532213461108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3637798442930310061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a73f7245dc7b84e94cbe0996fb133a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarManager
+  starsAndConstellations:
+  - {fileID: 3637798442930310061, guid: c8bc3e4f25b846d48825cc4c03f598ef, type: 3}
+  - {fileID: 3637798442930310061, guid: 160468ea8f9e5dd41a78aafee7936244, type: 3}
+  - {fileID: 3637798442930310061, guid: 7322a963da98d6144854eeb74a24e916, type: 3}
+  - {fileID: 3637798442930310061, guid: 5837288b1ff3d514c9cf75dd95b97255, type: 3}
+  - {fileID: 3637798442930310061, guid: 4bd4f538f7aee6d4398344263c24c72f, type: 3}
+  - {fileID: 3637798442930310061, guid: d7ff53e2c0e85604a9799feffa961bdf, type: 3}
+  - {fileID: 3637798442930310061, guid: 60476bc494425bc4e961ba42d0a2fe25, type: 3}
+--- !u!114 &6798246601862903308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3637798442930310061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfca7a95aff45d24fb69b6cc6e094632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Constellation
+  distanceFromPlayer: 200
+  minimalDistance: 100
+  animationSpeed: 1
+  textures: []
