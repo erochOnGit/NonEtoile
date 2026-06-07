@@ -126,7 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a73f7245dc7b84e94cbe0996fb133a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  distanceFromPlayer: 50
   minimalDistance: 20
   textures:
   - {fileID: 2800000, guid: 5c9d88ee84668f74799fa9501d7a50c5, type: 3}

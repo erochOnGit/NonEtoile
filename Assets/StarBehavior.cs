@@ -12,8 +12,7 @@ public class StarBehavior : MonoBehaviour
     {
 
         material = GetComponent<Renderer>().material;
-        material.SetTexture("BaseColor", textures[Random.Range(0, textures.Count)]);
-
+        material.mainTexture = textures[Random.Range(0, textures.Count)];
         distanceFromPlayer = Random.value * 100.0f;
 		this.transform.position = Random.onUnitSphere * distanceFromPlayer + new Vector3(minimalDistance, minimalDistance, minimalDistance);
         this.transform.LookAt(Camera.main.transform);
