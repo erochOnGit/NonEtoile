@@ -20,23 +20,20 @@ public class CameraController : MonoBehaviour
 	public GameObject UI;
 
 	Camera cameraComponent;
-	StarBehavior star;
+	StarManager star;
 	private Vector2 currentRotation = Vector2.zero;
 
 	bool haveWon = false;
 
 	void Start()
-    {
+	{
         Random.InitState(System.DateTime.Now.Second);
         Cursor.visible = false;
 		lookAction = InputSystem.actions.FindAction("Look");
 		zoomAction = InputSystem.actions.FindAction("Zoom");
 		cameraComponent = GetComponent<Camera>();
 		unZoomedValue = cameraComponent.fieldOfView;
-
-
-		star = GameObject.FindAnyObjectByType<StarBehavior>();
-		
+		star = GameObject.FindAnyObjectByType<StarManager>();
 	}
 
     
@@ -79,7 +76,7 @@ public class CameraController : MonoBehaviour
 			currentRotation.x += lookValue.x;
 			currentRotation.y -= lookValue.y;
 			currentRotation.x = Mathf.Repeat(currentRotation.x, 360);
-			currentRotation.y = Mathf.Clamp(currentRotation.y, -80 , 80 );
+			currentRotation.y = Mathf.Clamp(currentRotation.y, -80 , 80);
 			Camera.main.transform.rotation = Quaternion.Euler(currentRotation.y, currentRotation.x, 0);
 		}
 	}
