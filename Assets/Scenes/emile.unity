@@ -132,14 +132,6 @@ PrefabInstance:
       value: Grenouille
       objectReference: {fileID: 0}
     - target: {fileID: 5773828106823452568, guid: 160468ea8f9e5dd41a78aafee7936244, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5773828106823452568, guid: 160468ea8f9e5dd41a78aafee7936244, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5773828106823452568, guid: 160468ea8f9e5dd41a78aafee7936244, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.19722
       objectReference: {fileID: 0}
@@ -623,14 +615,6 @@ PrefabInstance:
       value: Escargot
       objectReference: {fileID: 0}
     - target: {fileID: 5773828106823452568, guid: c8bc3e4f25b846d48825cc4c03f598ef, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5773828106823452568, guid: c8bc3e4f25b846d48825cc4c03f598ef, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5773828106823452568, guid: c8bc3e4f25b846d48825cc4c03f598ef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.66
       objectReference: {fileID: 0}
@@ -888,18 +872,6 @@ PrefabInstance:
     - target: {fileID: 3637798442930310061, guid: 5837288b1ff3d514c9cf75dd95b97255, type: 3}
       propertyPath: m_Name
       value: LutteJap
-      objectReference: {fileID: 0}
-    - target: {fileID: 5773828106823452568, guid: 5837288b1ff3d514c9cf75dd95b97255, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5773828106823452568, guid: 5837288b1ff3d514c9cf75dd95b97255, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5773828106823452568, guid: 5837288b1ff3d514c9cf75dd95b97255, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5773828106823452568, guid: 5837288b1ff3d514c9cf75dd95b97255, type: 3}
       propertyPath: m_LocalPosition.x

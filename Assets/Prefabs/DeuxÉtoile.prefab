@@ -128,4 +128,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   minimalDistance: 20
   textures:
-  - {fileID: 2800000, guid: c0d116b07d3d02f4484cd52a004f1da3, type: 3}
+  - {fileID: 2800000, guid: 0d2511a245fe4eb45bcdce95952242c5, type: 3}

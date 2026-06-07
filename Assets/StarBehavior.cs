@@ -10,7 +10,7 @@ public class StarBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        Random.InitState(System.DateTime.Now.Second);
         material = GetComponent<Renderer>().material;
         material.mainTexture = textures[Random.Range(0, textures.Count)];
         distanceFromPlayer = Random.value * 100.0f;
