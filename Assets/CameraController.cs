@@ -27,8 +27,8 @@ public class CameraController : MonoBehaviour
 
 	void Start()
 	{
-		Random.InitState(System.DateTime.Now.Second);
-		Cursor.visible = false;
+        Random.InitState(System.DateTime.Now.Second);
+        Cursor.visible = false;
 		lookAction = InputSystem.actions.FindAction("Look");
 		zoomAction = InputSystem.actions.FindAction("Zoom");
 		cameraComponent = GetComponent<Camera>();
@@ -85,12 +85,15 @@ public class CameraController : MonoBehaviour
 	{
 		UI.SetActive(true);
 		haveWon = true;
+		Cursor.visible = true;
 	}
 
 	public void Restart()
 	{
-		SceneManager.LoadScene(1);
-		SceneManager.LoadScene(2,LoadSceneMode.Additive);
+
+		Cursor.visible = false;
+		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(1,LoadSceneMode.Additive);
 	}
 
 }
