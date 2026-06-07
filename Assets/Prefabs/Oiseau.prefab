@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2169672924190069185}
   - component: {fileID: 1999159886494814259}
   m_Layer: 0
-  m_Name: C
+  m_Name: Oiseau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -126,9 +126,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfca7a95aff45d24fb69b6cc6e094632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  minimalDistance: 20
   animationSpeed: 0.25
   textures:
-  - {fileID: 2800000, guid: 320a02ced777c9248a98b7893f8f26ce, type: 3}
-  - {fileID: 2800000, guid: 501522b34a9576a4eb267780fe48de1b, type: 3}
-  - {fileID: 2800000, guid: 4f73d1e4812270b4ebadbada7b74f46c, type: 3}
-  - {fileID: 2800000, guid: 6c4caa20558d3ee42a843a7e1b1dbc29, type: 3}
+  - {fileID: 2800000, guid: 9aff32830fb38314f9c8aa3104daac9c, type: 3}
+  - {fileID: 2800000, guid: 661bbc2e00a72a44f9c5ed4fa27f6702, type: 3}
+  - {fileID: 2800000, guid: 9dccd1cbb85c67049a26c81a81c5bd87, type: 3}
+  - {fileID: 2800000, guid: 02345bd993a56614ab70cb5ee1a106f6, type: 3}

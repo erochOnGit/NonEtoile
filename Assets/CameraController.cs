@@ -26,8 +26,9 @@ public class CameraController : MonoBehaviour
 	bool haveWon = false;
 
 	void Start()
-	{
-		Cursor.visible = false;
+    {
+        Random.InitState(System.DateTime.Now.Second);
+        Cursor.visible = false;
 		lookAction = InputSystem.actions.FindAction("Look");
 		zoomAction = InputSystem.actions.FindAction("Zoom");
 		cameraComponent = GetComponent<Camera>();
