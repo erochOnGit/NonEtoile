@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2169672924190069185}
   - component: {fileID: 1999159886494814259}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Escargot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,6 +126,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfca7a95aff45d24fb69b6cc6e094632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  animationSpeed: 1
+  animationSpeed: 0.25
   textures:
-  - {fileID: 0}
+  - {fileID: 2800000, guid: 3660d560a404807428d2c02feb56a07b, type: 3}
+  - {fileID: 2800000, guid: b62730fe4c25d0a40968b85fbd0ea4f1, type: 3}
+  - {fileID: 2800000, guid: 8caac1699802f0d4baeea1d1fb6a7653, type: 3}
+  - {fileID: 2800000, guid: 4e3be8371c402484699a615584413641, type: 3}
