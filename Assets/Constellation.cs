@@ -4,8 +4,8 @@ using UnityEngine.Rendering;
 
 public class Constellation : MonoBehaviour
 {
-    private float distanceFromPlayer;
-    public float minimalDistance = 20;
+    public float distanceFromPlayer = 200;
+    public float minimalDistance = 100;
     public float animationSpeed = 1;
     int textureID = 0;
     public List<Texture> textures;
@@ -17,11 +17,11 @@ public class Constellation : MonoBehaviour
     {
         material = GetComponent<Renderer>().material;
 
-        distanceFromPlayer = Random.value * 750.0f;
+        float dist = Random.value * distanceFromPlayer;
 
         Vector3 dir = Random.onUnitSphere;
 
-        this.transform.position = dir * distanceFromPlayer + dir * minimalDistance;
+        this.transform.position = dir * dist + dir * minimalDistance;
         this.transform.LookAt(Camera.main.transform.position);
         this.transform.Rotate(transform.forward, Random.value);
 
