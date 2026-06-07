@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2169672924190069185}
   - component: {fileID: 6922510756213554342}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: "Deux\xC9toile"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,4 +129,4 @@ MonoBehaviour:
   distanceFromPlayer: 50
   minimalDistance: 20
   textures:
-  - {fileID: 2800000, guid: 5c9d88ee84668f74799fa9501d7a50c5, type: 3}
+  - {fileID: 2800000, guid: c0d116b07d3d02f4484cd52a004f1da3, type: 3}
