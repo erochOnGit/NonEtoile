@@ -27,6 +27,7 @@ public class CameraController : MonoBehaviour
 
 	void Start()
 	{
+		Cursor.visible = false;
 		lookAction = InputSystem.actions.FindAction("Look");
 		zoomAction = InputSystem.actions.FindAction("Zoom");
 		cameraComponent = GetComponent<Camera>();
